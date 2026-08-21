@@ -1,0 +1,35 @@
+@layer defaults {
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f8fafc;
+        font-family: "Poppins", sans-serif, system-ui;
+        line-height: 1.5;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        display: block;
+        max-inline-size: 100%;
+        block-size: auto;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    time {
+        font-weight: 500;
+    }
+}
