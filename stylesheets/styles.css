@@ -47,7 +47,7 @@ header {
 }
 
 .page-title {
-    inline-size: clamp(17ch, 20ch + 10%, 50ch);
+    inline-size: 16ch;
     margin-inline: auto;
     font-size: 2.25rem;
 }
@@ -82,6 +82,10 @@ header {
 /* MEDIA QUERIES */
 
 @media screen and (width > 40em) {
+    .page-title {
+        inline-size: 25ch;
+    }
+
     .article {
         flex-direction: row;
         column-gap: 4.5rem;
