@@ -47,14 +47,14 @@ header {
 }
 
 .page-title {
-    max-inline-size: 17ch;
+    inline-size: clamp(17ch, 20ch + 10%, 50ch);
     margin-inline: auto;
     font-size: 2.25rem;
 }
 
 /* MAIN CONTENT */
 .articles {
-    max-inline-size: min(80%, 45.875rem);
+    max-inline-size: min(80%, 46.125rem);
     margin-inline: auto;
 }
 
@@ -77,4 +77,25 @@ header {
 
 .article-title a {
     color: inherit;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (width > 40em) {
+    .article {
+        flex-direction: row;
+        column-gap: 4.5rem;
+        align-items: center;
+    }
+
+    .article .image {
+        --size: 200px;
+        flex-shrink: 0;
+        inline-size: var(--size);
+        block-size: var(--size);
+    }
+
+    .article .article-title {
+        flex: 1;
+    }
 }
